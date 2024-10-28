@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: koalagrapher-api
+  web:
+    cors:
+      mappings:
+        "/galleries/**": #FIXME review this before release, remove allowed-origins
+          allowed-origins: "http://localhost:3000"
+          allowed-methods: "GET, POST, PUT, DELETE"
+          allow-credentials: true
