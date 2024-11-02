@@ -8,3 +8,9 @@ spring:
           allowed-origins: "http://localhost:3000"
           allowed-methods: "GET, POST, PUT, DELETE"
           allow-credentials: true
+
+  servlet:
+    multipart:
+      max-file-size: 35MB
+      max-request-size: 35MB
+      enabled: true
